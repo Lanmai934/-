@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <!-- 内容区域 -->
+    <div id="box">
+        <!-- 专门用于canvas绘制的画布标签，对外会表现为一个块级元素 -->
+        <canvas id="SnackArea"></canvas>
+        <!-- 工具栏，负责 分数 以及按钮 -->
+        <div id="toolbar">
+            <div id="GameScore">0000</div>
+            <div id="GameTime">00</div>
+            <div id="buttons">
+                <!-- 开始和暂停按钮 -->
+                <button id="start" onclick="start();"></button>
+                <button id="pause"></button>
+            </div>
+        </div>
+        <div id="GameOver" class="gaming"></div>
+    </div>
+    <audio src="../audio/Cut_01.mp3" id="bgmusic" preload="auto" loop></audio>
+    <audio src="../audio/si.mp3" id="addmusic" preload="auto"></audio>
+    <audio src="../audio/boing3.wav" id="overmusic" preload="auto"></audio>
+    <script src="../js/Track.js"></script>
+    <script src="../js/SnackPart.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
